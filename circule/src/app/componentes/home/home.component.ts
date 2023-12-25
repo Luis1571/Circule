@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    const arrayPrincipal = [
+   /*  const arrayPrincipal = [
       [{ id: 1 }, { id: 2 }],
       [{ id: 1 }, { id: 2 }],
 
@@ -36,6 +36,6 @@ export class HomeComponent implements OnInit {
 
     const arrayResultante = arrayPrincipal.flat();
 
-    console.log(arrayResultante);
+    console.log(arrayResultante); */
   }
 }

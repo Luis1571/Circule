@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-leer',
   templateUrl: './leer.component.html',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeerComponent implements OnInit {
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
+   
   }
 
 }
