@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { FormControl } from "@angular/forms";
 import { ActivatedRoute } from "@angular/router";
 import { Conecta_ServiceService } from "src/app/services/conecta_Service.service";
 
@@ -9,12 +10,13 @@ import { Conecta_ServiceService } from "src/app/services/conecta_Service.service
   styleUrls: ["./conecta.component.scss"],
 })
 export class ConectaComponent implements OnInit {
-
-  constructor(private readonly rutaActiva: ActivatedRoute,private conectaService:Conecta_ServiceService) {}
+  public inputControl: FormControl=new FormControl(); ;
+  constructor(private readonly rutaActiva: ActivatedRoute,private conectaService:Conecta_ServiceService) {   }
 
   ngOnInit(): void {
     //console.log(this.rutaActiva.snapshot.params["parametro"]);
    console.log(this.obtenerDatos()) 
+ 
 
   }
   obtenerDatos() {
@@ -27,4 +29,9 @@ export class ConectaComponent implements OnInit {
       }
     );
   }
+
+
+aa(){
+  console.log(this.inputControl)
+}
 }
